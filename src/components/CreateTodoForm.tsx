@@ -1,4 +1,5 @@
 import createTodo from "@/actions/createTodo";
+import FormButton from "./FormButton";
 
 export default function CreateTodoForm() {
   return (
@@ -9,9 +10,7 @@ export default function CreateTodoForm() {
         name="title"
         placeholder="Take out the trash..."
       />
-      <button className="bg-blue-500 rounded-lg px-4 py-2 ml-2 hover:bg-blue-600">
-        Add Todo
-      </button>
+      <FormButton>Add Todo</FormButton>
     </form>
   );
 }
