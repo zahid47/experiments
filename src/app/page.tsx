@@ -13,8 +13,13 @@ export default async function Page({
   return (
     <main>
       <h1 className="text-center text-xl p-6">Todos</h1>
-      <Slider currentValue={limit}/>
-      <Todos todos={todos} />
+      <section className="flex flex-col justify-center items-center">
+        <p className="text-sm p-4">Show how many?</p>
+        <Slider currentValue={limit} />
+      </section>
+      <section className="pt-12">
+        <Todos todos={todos} />
+      </section>
     </main>
   );
 }
