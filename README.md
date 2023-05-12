@@ -1,11 +1,13 @@
-Can we make a full stack web app without a single API endpoint? Let's find out!
+Can we make a full stack web app without a single "traditional" API endpoint? Let's find out!
 
 - Experimenting with Next.js 13.4
-    - Server components
-    - Server actions
+
+  - Server components
+  - Server actions
 
 - Also trying out other new tech I haven't used before
-    - Prisma
-    - Postgres
-    - Next auth
-    - Mantine
+
+  - Prisma
+  - Postgres
+  - Next auth
+  - Mantine
