@@ -8,8 +8,10 @@ export default async function Page({
 }: {
   searchParams: { [key: string]: string | string[] | undefined };
 }) {
-  const limit = Number(searchParams.limit) || 1;
-  const todos = await getTodos(limit);
+  const limit = Number(searchParams.limit) || 0;
+  const data = await getTodos(limit);
+  const total = data[0];
+  const todos = data[1];
 
   return (
     <main>
@@ -19,7 +21,7 @@ export default async function Page({
       </section>
       <section className="flex flex-col justify-center items-center">
         <p className="text-sm p-4">Show how many?</p>
-        <Slider currentValue={limit} />
+        <Slider currentValue={limit} max={total}/>
       </section>
       <section className="pt-12">
         <Todos todos={todos} />
