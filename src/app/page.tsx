@@ -1,6 +1,7 @@
 import getTodos from "@/actions/getTodos";
 import Slider from "@/components/Slider";
 import Todos from "@/components/Todos";
+import CreateTodoForm from "@/components/CreateTodoForm";
 
 export default async function Page({
   searchParams,
@@ -13,6 +14,9 @@ export default async function Page({
   return (
     <main>
       <h1 className="text-center text-xl p-6">Todos</h1>
+      <section className="flex flex-col justify-center items-center">
+        <CreateTodoForm />
+      </section>
       <section className="flex flex-col justify-center items-center">
         <p className="text-sm p-4">Show how many?</p>
         <Slider currentValue={limit} />
