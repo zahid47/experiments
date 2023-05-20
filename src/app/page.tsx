@@ -22,7 +22,7 @@ export default async function Page({
         <CreateTodoForm />
       </section>
       <section className="flex flex-col justify-center items-center">
-        <p className="text-sm p-4">Show how many? (Total: {todos.length})</p>
+        <p className="text-sm p-4">Show how many? (Total: {total})</p>
         <Slider currentValue={limit} max={total} />
       </section>
       <section className="pt-12">
