@@ -1,4 +1,4 @@
-Can we make a full stack web app without a single "traditional" API endpoint? Let's find out!
+Can we make a full stack web app without a single "traditional" API endpoint or any useState? Let's find out!
 
 - Experimenting with Next.js 13.4
 
@@ -11,3 +11,5 @@ Can we make a full stack web app without a single "traditional" API endpoint? Le
   - Postgres
   - Next auth
   - Mantine
+  - Zod
+  - Supabase
