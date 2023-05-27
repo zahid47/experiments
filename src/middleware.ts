@@ -1,9 +1,24 @@
+import { getToken } from "next-auth/jwt";
+import { withAuth } from "next-auth/middleware";
 import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
 
-// export async function middleware(request: NextRequest) {
-//   return NextResponse.next();
-// }
+export default withAuth(
+  async function middleware(req) {
+    const token = await getToken({ req });
 
-export { default } from "next-auth/middleware";
-export const config = { matcher: ["/secret"] };
+    if (!token) {
+      return NextResponse.redirect(new URL(`/`, req.url));
+    }
+  },
+  {
+    callbacks: {
+      authorized() {
+        return true;
+      },
+    },
+  }
+);
+
+export const config = {
+  matcher: ["/secret"],
+};

@@ -16,12 +16,12 @@ export default function Profile() {
           </p>
 
           <div className="flex flex-row justify-center items-center gap-2">
-            {/* <Link
+            <Link
               className="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded-lg"
               href={"/secret"}
             >
               Secret place
-            </Link> */}
+            </Link>
 
             <button
               className="bg-amber-500 hover:bg-amber-700 text-white py-2 px-4 rounded-lg"
