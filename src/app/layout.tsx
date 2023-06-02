@@ -11,13 +11,18 @@ export const metadata = {
 
 export default function RootLayout({
   children,
+  secretModal,
 }: {
   children: React.ReactNode;
+  secretModal?: React.ReactNode;
 }) {
   return (
     <html>
       <body className={inter.className}>
-        <Provider>{children}</Provider>
+        <Provider>
+          {children}
+          {secretModal}
+        </Provider>
       </body>
     </html>
   );
