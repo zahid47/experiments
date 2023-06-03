@@ -10,7 +10,6 @@ export default function MyModal({ children }: { children: React.ReactNode }) {
     <Modal
       opened={true}
       onClose={() => router.back()}
-      fullScreen
     >
       {children}
     </Modal>
