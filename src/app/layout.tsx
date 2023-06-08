@@ -17,7 +17,7 @@ export default function RootLayout({
   secretModal?: React.ReactNode;
 }) {
   return (
-    <html>
+    <html className="dark">
       <body className={inter.className}>
         <Provider>
           {children}
