@@ -1,6 +1,6 @@
 "use client";
 
-import { Dialog, DialogContent, DialogHeader } from "@/components/ui/dialog";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { useRouter } from "next/navigation";
 
 export default function MyModal({ children }: { children: React.ReactNode }) {
@@ -13,9 +13,7 @@ export default function MyModal({ children }: { children: React.ReactNode }) {
         router.back();
       }}
     >
-      <DialogContent>
-        <DialogHeader>{children}</DialogHeader>
-      </DialogContent>
+      <DialogContent>{children}</DialogContent>
     </Dialog>
   );
 }
