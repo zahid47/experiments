@@ -1,17 +1,21 @@
 "use client";
 
-import { Modal } from "@mantine/core";
+import { Dialog, DialogContent, DialogHeader } from "@/components/ui/dialog";
 import { useRouter } from "next/navigation";
 
 export default function MyModal({ children }: { children: React.ReactNode }) {
   const router = useRouter();
 
   return (
-    <Modal
-      opened={true}
-      onClose={() => router.back()}
+    <Dialog
+      defaultOpen
+      onOpenChange={() => {
+        router.back();
+      }}
     >
-      {children}
-    </Modal>
+      <DialogContent>
+        <DialogHeader>{children}</DialogHeader>
+      </DialogContent>
+    </Dialog>
   );
 }

@@ -12,5 +12,6 @@ Can we make a full stack web app without a single "traditional" API endpoint or 
   - Postgres
   - Next auth
   - Mantine
+  - Shadcn UI
   - Zod
   - Supabase
