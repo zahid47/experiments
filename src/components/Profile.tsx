@@ -2,7 +2,6 @@
 
 import { useSession, signIn, signOut } from "next-auth/react";
 import Link from "next/link";
-import Wizard from "./Wizard";
 
 export default function Profile() {
   const { data: session } = useSession();
@@ -17,8 +16,6 @@ export default function Profile() {
           </p>
 
           <div className="flex flex-row justify-center items-center gap-2">
-            <Wizard />
-            
             <Link
               className="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded-lg"
               href={"/secret"}
