@@ -12,11 +12,9 @@ export const metadata = {
 export default function RootLayout({
   children,
   secretModal,
-  singleModal,
 }: {
   children: React.ReactNode;
   secretModal?: React.ReactNode;
-  singleModal?: React.ReactNode;
 }) {
   return (
     <html className="dark">
@@ -24,7 +22,6 @@ export default function RootLayout({
         <Provider>
           {children}
           {secretModal}
-          {singleModal}
         </Provider>
       </body>
     </html>
