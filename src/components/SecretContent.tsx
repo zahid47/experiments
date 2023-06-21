@@ -7,7 +7,7 @@ export default function SecretContent({ text }: { text: string }) {
       <div>
       {Array.from({ length: 10 }, (_, i) => (
         <div key={i} className="flex flex-col items-center justify-center">
-          <Link href={`/items/${i}`}>
+          <Link href={`/secret/${i}`}>
             {i}. Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </Link>
         </div>

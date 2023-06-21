@@ -5,5 +5,5 @@ interface Props {
 }
 
 export default function page({ params: { id } }: Props) {
-  return <div>ID in modal {id}</div>;
+  return <div>secret id in page {id}</div>;
 }
