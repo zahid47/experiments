@@ -4,7 +4,7 @@ import SecretContent from "@/components/SecretContent";
 export default function page() {
   return (
     <MyModal>
-      <SecretContent text="Secret Modal"/>
+      <SecretContent text="Secrets in modal"/>
     </MyModal>
   );
 }
