@@ -11,7 +11,7 @@ interface DnDProps {
   children: React.ReactNode;
 }
 
-export function Draggable(props: DnDProps) {
+function Draggable(props: DnDProps) {
   const { attributes, listeners, setNodeRef, transform } = useDraggable({
     id: props.id,
   });
@@ -34,7 +34,7 @@ export function Draggable(props: DnDProps) {
   );
 }
 
-export function Droppable(props: DnDProps) {
+function Droppable(props: DnDProps) {
   const { isOver, setNodeRef } = useDroppable({
     id: props.id,
   });
