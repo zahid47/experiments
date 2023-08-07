@@ -15,6 +15,12 @@ export default async function Page({}: {}) {
             Multistep form
           </div>
         </Link>
+
+        <Link href="/grid-dnd">
+          <div className="flex h-48 w-48 cursor-pointer items-center justify-center rounded-xl bg-gray-800 text-center hover:bg-gray-700">
+            Grid DnD
+          </div>
+        </Link>
       </div>
     </main>
   );
