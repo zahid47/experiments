@@ -27,6 +27,12 @@ export default async function Page({}: {}) {
             Sort Checkboxes
           </div>
         </Link>
+
+        <Link href="/sidebar">
+          <div className="flex h-48 w-48 cursor-pointer items-center justify-center rounded-xl bg-gray-800 text-center hover:bg-gray-700">
+            Sidebar
+          </div>
+        </Link>
       </div>
     </main>
   );
