@@ -21,6 +21,12 @@ export default async function Page({}: {}) {
             Grid DnD
           </div>
         </Link>
+
+        <Link href="/sort-checkboxes">
+          <div className="flex h-48 w-48 cursor-pointer items-center justify-center rounded-xl bg-gray-800 text-center hover:bg-gray-700">
+            Sort Checkboxes
+          </div>
+        </Link>
       </div>
     </main>
   );
