@@ -71,3 +71,11 @@ model Todo {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+
+model News {
+  id        Int      @id @default(autoincrement())
+  headline  String
+  content   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

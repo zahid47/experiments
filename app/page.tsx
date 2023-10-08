@@ -33,6 +33,11 @@ export default async function Page({}: {}) {
             Sidebar
           </div>
         </Link>
+        <Link href="/supa-realtime">
+          <div className="flex h-48 w-48 cursor-pointer items-center justify-center rounded-xl bg-gray-800 text-center hover:bg-gray-700">
+            Supa realtime
+          </div>
+        </Link>
       </div>
     </main>
   );
